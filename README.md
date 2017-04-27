@@ -1,8 +1,14 @@
 # SLTThreadraceTest
 
-一种测试线程竞争的方法。
+
+A method to to test iOS thread race.You can run the demo project to see the result.
+
+一种测试 iOS 线程竞争的方法。可以运行demo工程查看效果
+
 
 核心代码如下：
+
+```
 - (void)execMultithreadWithBlock:(void(^)())block {
     for (int i = 0; i < 1000; i++) {
         @autoreleasepool {
@@ -19,3 +25,4 @@
     }
 
 }
+```
