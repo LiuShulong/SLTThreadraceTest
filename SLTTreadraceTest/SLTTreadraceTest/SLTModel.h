@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+FOUNDATION_EXPORT NSString *const SLTInitNoti;
+
 @interface SLTModel : NSObject
+
++ (instancetype)sharedInstance1;
+
++ (instancetype)sharedInstance2;
 
 @end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		74D43A691EB23B0700B7DBDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D43A681EB23B0700B7DBDA /* Assets.xcassets */; };
 		74D43A6C1EB23B0700B7DBDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D43A6A1EB23B0700B7DBDA /* LaunchScreen.storyboard */; };
 		74D43A771EB23B0700B7DBDA /* SLTTreadraceTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D43A761EB23B0700B7DBDA /* SLTTreadraceTestTests.m */; };
+		74D43A831EB23C5700B7DBDA /* SLTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D43A821EB23C5700B7DBDA /* SLTModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		74D43A721EB23B0700B7DBDA /* SLTTreadraceTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLTTreadraceTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D43A761EB23B0700B7DBDA /* SLTTreadraceTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLTTreadraceTestTests.m; sourceTree = "<group>"; };
 		74D43A781EB23B0700B7DBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D43A811EB23C5700B7DBDA /* SLTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTModel.h; sourceTree = "<group>"; };
+		74D43A821EB23C5700B7DBDA /* SLTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				74D43A601EB23B0700B7DBDA /* AppDelegate.m */,
 				74D43A621EB23B0700B7DBDA /* ViewController.h */,
 				74D43A631EB23B0700B7DBDA /* ViewController.m */,
+				74D43A811EB23C5700B7DBDA /* SLTModel.h */,
+				74D43A821EB23C5700B7DBDA /* SLTModel.m */,
 				74D43A651EB23B0700B7DBDA /* Main.storyboard */,
 				74D43A681EB23B0700B7DBDA /* Assets.xcassets */,
 				74D43A6A1EB23B0700B7DBDA /* LaunchScreen.storyboard */,
@@ -155,24 +160,23 @@
 		74D43A511EB23B0700B7DBDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SLT;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = LiuShulong;
 				TargetAttributes = {
 					74D43A581EB23B0700B7DBDA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = YREGVU8659;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					74D43A711EB23B0700B7DBDA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = YREGVU8659;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 74D43A581EB23B0700B7DBDA;
 					};
 				};
 			};
 			buildConfigurationList = 74D43A541EB23B0700B7DBDA /* Build configuration list for PBXProject "SLTTreadraceTest" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -216,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74D43A641EB23B0700B7DBDA /* ViewController.m in Sources */,
+				74D43A831EB23C5700B7DBDA /* SLTModel.m in Sources */,
 				74D43A611EB23B0700B7DBDA /* AppDelegate.m in Sources */,
 				74D43A5E1EB23B0700B7DBDA /* main.m in Sources */,
 			);
@@ -353,7 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YREGVU8659;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SLTTreadraceTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liushulong.SLTTreadraceTest;
@@ -365,7 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YREGVU8659;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SLTTreadraceTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liushulong.SLTTreadraceTest;
